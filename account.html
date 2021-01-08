@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/eefb8c99c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>detalles del producto</title>
+  </head>
+  <body>
+    <!-- hero -->
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="./images/logo-a.png" alt="" /></a>
+          </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="index.html">inicio</a></li>
+              <li><a href="products.html">mercaderia</a></li>
+              <li><a href="#">nosotros</a></li>
+              <li><a href="#">contacto</a></li>
+              <li><a href="account.html">cuenta</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"
+            ><img src="./images/cart.png" alt="" class="cart"
+          /></a>
+          <img
+            src="./images/menu.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- end of hero -->
+    <section class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="./images/image1-a.png" alt="" />
+          </div>
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Entrar</span>
+                <span onclick="register()">Registrarse</span>
+                <hr id="indicator" />
+              </div>
+              <!-- form-->
+              <form id="loginForm">
+                <input type="text" placeholder="Usuario" />
+                <input type="password" placeholder="clave" />
+                <button type="submit" class="btn">Login</button>
+                <a href="#">Olvid&eacute; Contrase&ntilde;a</a>
+              </form>
+              <!-- end of formu -->
+              <!-- form-->
+              <form id="regForm">
+                <input type="text" placeholder="Usuario" />
+                <input type="email" placeholder="e-mail" />
+                <input type="password" placeholder="clave" />
+                <button type="submit" class="btn">Registrarse</button>
+                <a href="#">Olvid&eacute; Contrase&ntilde;a</a>
+              </form>
+              <!-- end of formu -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- footer-1 -->
+          <div class="footer-col-1">
+            <h3 class="footer-title">descargue nuestra app</h3>
+            <p class="footer-text">android / i-phone</p>
+            <div class="app-logo">
+              <img src="./images/app-store.png" alt="" />
+              <img src="./images/play-store.png" alt="" />
+            </div>
+          </div>
+          <!-- end of footer-1 -->
+          <!-- footer-1 -->
+          <div class="footer-col-2">
+            <h3 class="footer-title">vis&iacute;tenos</h3>
+            <img src="./images/logo-a.png" alt="" />
+            <p class="footer-text">
+              -Calzada Roosevelt 33-85 zona 11 <br />
+              -3a. avenida 12-52 zona 1, ciudad
+            </p>
+          </div>
+          <!-- end of footer-1 -->
+          <!-- footer-1 -->
+          <div class="footer-col-3">
+            <h3 class="footer-title">sitios de inter&eacute;s</h3>
+            <ul>
+              <li>cupones</li>
+              <li>blog</li>
+              <li>devoluciones</li>
+              <li>reg&iacute;strese</li>
+            </ul>
+          </div>
+          <!-- end of footer-1 -->
+          <!-- footer-1 -->
+          <div class="footer-col-4">
+            <h3 class="footer-title">s&iacute;ganos</h3>
+            <ul>
+              <li>
+                <span class="footer-icon"><i class="fab fa-facebook"></i></span>
+              </li>
+              <li>
+                <span class="footer-icon"><i class="fab fa-twitter"></i></span>
+              </li>
+              <li>
+                <span class="footer-icon"
+                  ><i class="fab fa-instagram"></i
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <!-- end of footer-1 -->
+        </div>
+        <hr />
+        <p class="copyright">copyright &copy; 2020 - cefelectronicas.com.</p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+    <script src="./app.js"></script>
+  </body>
+</html>

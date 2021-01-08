@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/eefb8c99c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>detalles del producto</title>
+  </head>
+  <body>
+    <!-- hero -->
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="./images/logo-a.png" alt="" /></a>
+          </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="index.html">inicio</a></li>
+              <li><a href="products.html">mercaderia</a></li>
+              <li><a href="#">nosotros</a></li>
+              <li><a href="#">contacto</a></li>
+              <li><a href="account.html">cuenta</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"
+            ><img src="./images/cart.png" alt="" class="cart"
+          /></a>
+          <img
+            src="./images/menu.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- end of hero -->
+    <!--  single product detail -->
+    <section class="product-container">
+      <div class="small-container single-product">
+        <div class="row">
+          <div class="col-2 col-2-img">
+            <img
+              src="./images/ad-jh-3xrav1.jpg"
+              alt=""
+              class="img-detail"
+              id="product-img"
+            />
+
+            <div class="small-img-row">
+              <!-- thumb -->
+              <div class="small-img-col">
+                <img
+                  src="./images/ad-jh-3xrav1.jpg"
+                  alt=""
+                  class="small-img"
+                  id="thumb-1"
+                  onclick="change(this.src)"
+                />
+              </div>
+              <!-- end of thumb -->
+              <!-- thumb -->
+              <div class="small-img-col">
+                <img
+                  src="./images/ad-jh-3xrav3.jpg"
+                  alt=""
+                  class="small-img"
+                  id="thumb-2"
+                  onclick="change(this.src)"
+                />
+              </div>
+              <!-- end of thumb -->
+              <!-- thumb -->
+              <div class="small-img-col">
+                <img
+                  src="./images/ad-jh-3xrav-2.jpg"
+                  alt=""
+                  class="small-img"
+                  id="thumb-3"
+                  onclick="change(this.src)"
+                />
+              </div>
+              <!-- end of thumb -->
+              <!-- thumb -->
+              <div class="small-img-col">
+                <img
+                  src="./images/ad-jh-3xrav3.jpg"
+                  alt=""
+                  class="small-img"
+                  id="thumb-4"
+                  onclick="change(this.src)"
+                />
+              </div>
+              <!-- end of thumb -->
+            </div>
+          </div>
+          <div class="col-2 details">
+            <p>
+              <span><a href="index.html">inicio</a></span> /
+              <span><a href="products.html">categorias</a></span> /
+              <span><a href="adaptadores.html">adaptadores</a></span>
+            </p>
+            <h1>adaptador de <br />hDMI a rCA</h1>
+            <h2 class="product-subtitle">
+              Descripci&oacute;n <i class="fa fa-indent"></i>
+            </h2>
+            <h4 class="product-detail">
+              Convierte la se&ntilde;al de audio-video de HDMI a RCA. Se usa
+              generalmente para conectar aparatos con salida HDMI a televisores
+              antiguos.
+            </h4>
+
+            <h3 class="product-price">Q150.00</h3>
+
+            <div class="product-qty">
+              <input type="number" value="1" min="0" />
+              <a href="cart.html" class="btn btn-buy">comprar</a>
+            </div>
+            <div class="price-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1-5</td>
+                    <td>Q150.00</td>
+                  </tr>
+                  <tr>
+                    <td>6-12</td>
+                    <td>Q140.00</td>
+                  </tr>
+                  <tr>
+                    <td>13 -</td>
+                    <td>Q125.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h3>disponible : <span>75 unidades</span></h3>
+          </div>
+        </div>
+      </div>
+      <!-- end of single product detail -->
+
+      <!--  products -->
+      <div class="small-container similar">
+        <h2 class="sub-title">tambi&eacute;n podr&iacute;a interesarle...</h2>
+        <div class="linea"></div>
+        <div class="row">
+          <!-- single product -->
+          <div class="col-4">
+            <img
+              src="./images/gallery-2a.jpg"
+              alt=""
+              class="feature-img latest"
+            />
+            <h3 class="description">audio digital a analogo</h3>
+            <p class="price">Q250.00</p>
+          </div>
+          <!-- single product -->
+          <!-- single product -->
+          <div class="col-4">
+            <img
+              src="./images/ad-db15f-puhs.jpg"
+              alt=""
+              class="feature-img latest"
+            />
+            <h3 class="description">vGA a micro-hDMI</h3>
+            <p class="price">Q235.00</p>
+          </div>
+          <!-- single product -->
+          <!-- single product -->
+          <div class="col-4">
+            <img
+              src="./images/gallery-1a.jpg"
+              alt=""
+              class="feature-img latest"
+            />
+            <h3 class="description">hDMI a rJ45</h3>
+            <p class="price">Q399.00</p>
+          </div>
+          <!-- single product -->
+          <!-- single product -->
+          <div class="col-4">
+            <img
+              src="./images/ad-pbnc-2tbmxx2.jpg"
+              alt=""
+              class="feature-img latest"
+            />
+            <h3 class="description">plug bNC a 2 terminales</h3>
+            <p class="price">Q50.00</p>
+          </div>
+          <!-- single product -->
+        </div>
+      </div>
+    </section>
+    <!-- end of products -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- footer-1 -->
+          <div class="footer-col-1">
+            <h3 class="footer-title">descargue nuestra app</h3>
+            <p class="footer-text">android / i-phone</p>
+            <div class="app-logo">
+              <img src="./images/app-store.png" alt="" />
+              <img src="./images/play-store.png" alt="" />
+            </div>
+          </div>
+          <!-- end of footer-1 -->
+          <!-- footer-1 -->
+          <div class="footer-col-2">
+            <h3 class="footer-title">vis&iacute;tenos</h3>
+            <img src="./images/logo-a.png" alt="" />
+            <p class="footer-text">
+              -Calzada Roosevelt 33-85 zona 11 <br />
+              -3a. avenida 12-52 zona 1, ciudad
+            </p>
+          </div>
+          <!-- end of footer-1 -->
+          <!-- footer-1 -->
+          <div class="footer-col-3">
+            <h3 class="footer-title">sitios de inter&eacute;s</h3>
+            <ul>
+              <li>cupones</li>
+              <li>blog</li>
+              <li>devoluciones</li>
+              <li>reg&iacute;strese</li>
+            </ul>
+          </div>
+          <!-- end of footer-1 -->
+          <!-- footer-1 -->
+          <div class="footer-col-4">
+            <h3 class="footer-title">s&iacute;ganos</h3>
+            <ul>
+              <li>
+                <span class="footer-icon"><i class="fab fa-facebook"></i></span>
+              </li>
+              <li>
+                <span class="footer-icon"><i class="fab fa-twitter"></i></span>
+              </li>
+              <li>
+                <span class="footer-icon"
+                  ><i class="fab fa-instagram"></i
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <!-- end of footer-1 -->
+        </div>
+        <hr />
+        <p class="copyright">copyright &copy; 2020 - cefelectronicas.com.</p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
